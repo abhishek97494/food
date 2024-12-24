@@ -1,0 +1,158 @@
+<html>
+ <head>
+  <title>
+   Grabify App
+  </title>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        header a {
+            color: #666;
+            margin-right: 16px;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .content img {
+            width: 100px;
+            margin-bottom: 16px;
+            background-color: white;
+        }
+        .content h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 16px;
+        }
+        .content p {
+            color: #666;
+            margin-bottom: 24px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .form-group label {
+            display: flex;
+            align-items: center;
+            margin-right: 16px;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 8px;
+        }
+        .form-group input[type="email"] {
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 4px 0 0 4px;
+            width: 200px;
+        }
+        .form-group button {
+            background-color: #ff5a5f;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+        }
+        .download-buttons a {
+            margin-right: 16px;
+        }
+        .download-buttons img {
+            width: 150px;
+        }
+        @media (min-width: 768px) {
+            main {
+                flex-direction: row;
+            }
+            .content {
+                align-items: flex-start;
+                text-align: left;
+                margin-left: 32px;
+            }
+            .content img {
+                margin-bottom: 0;
+                margin-right: 32px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="logo">
+    grabify
+   </div>
+   <div>
+    <a href="loginpage.html">
+     Log in
+    </a>
+
+   </div>
+  </header>
+  <main>
+   <img alt="Two smartphones displaying the Grabify app interface" height="200" src="https://storage.googleapis.com/a1aa/image/W2PELpYXQO47Fln8hDvKzcUwwUpOuMspqeeP9w4paURaUP2TA.jpg" width="100"/>
+   <div class="content">
+    <h1>
+     Get the Grabify App
+    </h1>
+    <p>
+     We will send you a link, open it on your phone to download the app
+    </p>
+    <div class="form-group">
+     <label>
+      <input checked="" name="contact" type="radio"/>
+      Email
+     </label>
+     <label>
+      <input name="contact" type="radio"/>
+      Phone
+     </label>
+    </div>
+    <div class="form-group">
+     <input placeholder="Email" type="email"/>
+     <a href="new.html"><button>
+      Share App Link
+     </button></a>
+    </div>
+    <div class="download-buttons">
+     <a href="#">
+      <img alt="Google Play Store badge" src="https://storage.googleapis.com/a1aa/image/tc0gCQjbMqrSMNmlBGMHBCVIndRsJuFKgzaB80EU9fe9MP2TA.jpg"/>
+     </a>
+     <a href="#">
+      <img alt="Apple App Store badge" src="https://storage.googleapis.com/a1aa/image/faguBDakfOuLCkZTKWyA0HO2hU5aLBGkQduEOfcbMT2ez8YPB.jpg"/>
+     </a>
+    </div>
+   </div>
+  </main>
+ </body>
+</html>

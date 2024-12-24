@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #1a202c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .login-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .login-header h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #718096;
+        }
+        .close-btn:hover {
+            color: #4a5568;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+        .input-group img {
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+        }
+        .input-group select, .input-group input {
+            border: none;
+            padding: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+        .input-group select {
+            background: none;
+        }
+        .input-group input {
+            flex: 1;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background-color: #f56565;
+            color: white;
+            margin-bottom: 16px;
+        }
+        .btn-primary:hover{
+            background-color: red;
+
+        }
+        .btn-secondary {
+            background-color: #edf2f7;
+            color: #4a5568;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        .btn-secondary i {
+            margin-right: 8px;
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .divider hr {
+            flex: 1;
+            border: none;
+            border-top: 1px solid #e2e8f0;
+        }
+        .divider span {
+            padding: 0 8px;
+            color: #a0aec0;
+        }
+        .footer {
+            text-align: center;
+            color: #a0aec0;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #f56565;
+            text-decoration: none;
+        }
+       .atag{
+        color: white;
+        text-decoration: none;
+       }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Login</h2>
+            <button class="close-btn" ><a href="new.html" >×</a></button>
+        </div>
+        <div class="input-group">
+            <img src="https://storage.googleapis.com/a1aa/image/U1KzBxHmfhXBOaT6YfmHQulpEsAAeOHe5bEcUjzg3sHYr5YPB.jpg" alt="Country flag">
+            <select>
+                <option value="+91">+91</option>
+            </select>
+            <input type="text" placeholder="Phone">
+        </div>
+        <a href="new.html" class="atag"> <button class="btn btn-primary"> One Time Password</button></a>
+        <div class="divider">
+            <hr>
+            <span>or</span>
+            <hr>
+        </div>
+        <button class="btn btn-secondary">
+           Continue with Email
+        </button>
+        <button class="btn btn-secondary">
+            Sign in with Google
+        </button>
+        <div class="footer">
+            New to Grabify? <a href="#">Create account</a>
+        </div>
+    </div>
+
+
+</body>
+</html>
